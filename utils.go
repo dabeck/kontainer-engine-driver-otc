@@ -174,7 +174,7 @@ func fillCreateOptions(driverFlag *types.DriverFlags) {
 	driverFlag.Options["master-version"] = &types.Flag{
 		Type:  types.StringType,
 		Usage: "The kubernetes master version",
-		Value: "v1.9.10-r0",
+		Value: "v1.13.10-r0",
 	}
 	driverFlag.Options["node-count"] = &types.Flag{
 		Type:  types.IntType,
@@ -268,7 +268,7 @@ func fillCreateOptions(driverFlag *types.DriverFlags) {
 	driverFlag.Options["node-operation-system"] = &types.Flag{
 		Type:  types.StringType,
 		Usage: "The operation system of nodes",
-		Value: "EulerOS 2.2",
+		Value: "EulerOS 2.5",
 	}
 	driverFlag.Options["ssh-key"] = &types.Flag{
 		Type:  types.StringType,
