@@ -141,7 +141,7 @@ func fillCreateOptions(driverFlag *types.DriverFlags) {
 	driverFlag.Options["region"] = &types.Flag{
 		Type:  types.StringType,
 		Usage: "The region to launch the cluster",
-		Value: "cn-north-1",
+		Value: "eu-de",
 	}
 	driverFlag.Options["access-key"] = &types.Flag{
 		Type:  types.StringType,
@@ -238,7 +238,7 @@ func fillCreateOptions(driverFlag *types.DriverFlags) {
 	driverFlag.Options["available-zone"] = &types.Flag{
 		Type:  types.StringType,
 		Usage: "The available zone which the nodes in",
-		Value: "cn-north-1a",
+		Value: "eu-de",
 	}
 	driverFlag.Options["node-labels"] = &types.Flag{
 		Type:  types.StringSliceType,
