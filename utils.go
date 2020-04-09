@@ -366,7 +366,7 @@ func createSubnet(ctx context.Context, networkClient *network.Client, state *sta
 			Cidr:         common.DefaultCidr,
 			GatewayIP:    common.DefaultGateway,
 			VpcID:        state.VpcID,
-			PrimaryDNS:   "114.114.114.114",
+			PrimaryDNS:   "1.1.1.1",
 			SecondaryDNS: "8.8.8.8",
 			DhcpEnable:   true,
 		},
