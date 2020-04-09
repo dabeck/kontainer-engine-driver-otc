@@ -29,6 +29,7 @@ const (
 type state struct {
 	AccessKey             string
 	SecretKey             string
+	APIEndpoint           string
 	ClusterName           string
 	DisplayName           string
 	Description           string
@@ -444,7 +445,7 @@ func getHuaweiBaseClient(s state) *common.Client {
 	return common.NewClient(
 		s.AccessKey,
 		s.SecretKey,
-		common.DefaultAPIEndpoint,
+		s.APIEndpoint,
 		s.Region,
 		s.ProjectID,
 	)

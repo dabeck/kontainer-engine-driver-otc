@@ -133,6 +133,11 @@ func fillCreateOptions(driverFlag *types.DriverFlags) {
 		Type:  types.StringType,
 		Usage: "the ID of your project to use when creating a cluster",
 	}
+	driverFlag.Options["apiEndpoint"] = &types.Flag{
+		Type:  types.StringType,
+		Usage: "The api endpoint to contact",
+		Value: "otc.t-systems.com",
+	}
 	driverFlag.Options["region"] = &types.Flag{
 		Type:  types.StringType,
 		Usage: "The region to launch the cluster",
@@ -525,6 +530,7 @@ func getStateFromOptions(driverOptions *types.DriverOptions) (state, error) {
 	state.ClusterName = getValueFromDriverOptions(driverOptions, types.StringType, "name").(string)
 	state.DisplayName = getValueFromDriverOptions(driverOptions, types.StringType, "display-name", "displayName").(string)
 	state.ProjectID = getValueFromDriverOptions(driverOptions, types.StringType, "project-id", "projectId").(string)
+	state.APIEndpoint = getValueFromDriverOptions(driverOptions, types.StringType, "apiEndpoint", "apiEndpoint").(string)
 	state.Region = getValueFromDriverOptions(driverOptions, types.StringType, "region").(string)
 	state.Description = getValueFromDriverOptions(driverOptions, types.StringType, "description").(string)
 	state.ClusterType = getValueFromDriverOptions(driverOptions, types.StringType, "cluster-type", "clusterType").(string)
