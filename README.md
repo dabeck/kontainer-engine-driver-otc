@@ -1,16 +1,15 @@
-Kontainer Engine Example Driver
+Kontainer Engine OTC Driver
 ===============================
 
-## ***FILL THIS OUT WITH A USEFUL DESCRIPTION OF THIS REPO***
+Driver for [Open Telekom Cloud](https://open-telekom-cloud.com/de/produkte-services/cloud-container-engine) CCE
 
 ## Building
 
 `make`
 
-
 ## Running
 
-`./bin/kontainer-engine-driver-huawei`
+`./bin/kontainer-engine-driver-otc`
 
 ## License
 Copyright (c) 2018 [Rancher Labs, Inc.](http://rancher.com)
